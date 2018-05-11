@@ -907,26 +907,30 @@ var RenderPDF = function () {
 
                             case 3:
                                 _context18.prev = 3;
-                                return _context18.abrupt('return', renderer.renderPdf(url, renderer.generatePdfOptions()));
+                                _context18.next = 6;
+                                return renderer.renderPdf(url, renderer.generatePdfOptions());
 
-                            case 7:
-                                _context18.prev = 7;
+                            case 6:
+                                return _context18.abrupt('return', _context18.sent);
+
+                            case 9:
+                                _context18.prev = 9;
                                 _context18.t0 = _context18['catch'](3);
 
                                 renderer.error('error:', _context18.t0);
 
-                            case 10:
-                                _context18.prev = 10;
+                            case 12:
+                                _context18.prev = 12;
 
                                 renderer.killChrome();
-                                return _context18.finish(10);
+                                return _context18.finish(12);
 
-                            case 13:
+                            case 15:
                             case 'end':
                                 return _context18.stop();
                         }
                     }
-                }, _callee18, this, [[3, 7, 10, 13]]);
+                }, _callee18, this, [[3, 9, 12, 15]]);
             }));
 
             function generatePdfBuffer(_x15, _x16) {
