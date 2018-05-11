@@ -97,6 +97,7 @@ class RenderPDF {
 
                 await Page.navigate({url});
                 await Emulation.setVirtualTimePolicy({policy: 'pauseIfNetworkFetchesPending', budget: 5000});
+                await Emulation.setEmulatedMedia({media: "screen"});
 
                 await this.profileScope('Wait for load', async () => {
                     await loaded;
